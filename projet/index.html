@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+   <header>
+    
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+                <img src="data:image/png;base64,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" alt="">
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#articles">Articles</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+          <div id="#phrase">
+          <h1 class="mt-4">Quoi Manger Pour Se Sentir Jeune? </h1>
+        </div>
+        </div>
+<button onclick="typeWriter()" style="font-family:cursive">secret is here</button>
+<p id="texteto"></p>
+   </header> 
+   <main>
+       <div  class="container">
+           <div class="row "id ="articles">
+               <div data-aos="fade-right" class="image one col-md-6">
+                   <img src="https://static.cuisineaz.com/680x357/i24262-la-regle-ultime-pour-bien-manger-et-etre-en-bonne-sante.jpg"style="width: 450px;
+                   height: 250px;">
+                   <p> Depuis quelques années, certains spécialistes suggèrent que les acides gras polyinsaturés que sont les oméga-3 ont un effet bénéfique sur notre santé cardiovasculaire. Et il nous est recommandé de complémenter notre alimentation en oméga-3 soit en consommant des aliments qui en sont riches — comme les poissons gras ou les noix — soit par le biais de gélules. Mais une méta-analyse menée par des chercheurs de l'université d’East Anglia (Royaume-Uni) vient mettre à mal cette idée.
+                    « L'augmentation des oméga-3 n'a que peu ou pas d'effet sur la mortalité ou la santé cardiovasculaire. » Pour arriver à cette conclusion, les chercheurs ont compilé les résultats de pas moins de 79 essais randomisés contrôlés portant sur un total de plus de 110.000 participants originaires d'Amérique du Nord, d'Australie, d'Asie et d'Europe, en bonne santé ou souffrant de difficultés cardiaques préexistantes.</p>
+              </p>
+                   </div>
+               <div data-aos="fade-left" class="image tow col-md-6">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6aN0anFNa25dVQdSajDQeP9nF2_tmId7sYo8NBzR9GQkN3tfp" style="width: 450px;
+                   height: 250px;">
+                   <p>Le matin : Privilégiez les plantes dites toniques : ginseng, gingembre, angélique, sarriette. Avec leurs propriétés anti-fatigues, les infusions de maté et de guarana stimulent l’organisme et accroissent la vigilance.
+                    Tout au long de la journée : Le cassis et la vigne rouge activent la circulation sanguine et soulagent les jambes lourdes. Le bouleau draine grâce à ses propriétés antiseptiques et dépuratives tandis que le pissenlit est diurétique et détoxifiant.
+                    Après-repas : Après le déjeuner ou le dîner, privilégiez les plantes digestives comme la sauge qui atténue les crampes et douleurs. La menthe et la verveine, elles, réduisent les ballonnements et les fermentations intestinales.
+                    En cas de désagréments : On utilise le sureau pour soigner les infections hivernales tandis que la menthe poivrée calme les maux de ventre. Pour apaiser les états nerveux, la lavande est votre alliée. Elle facilite la digestion, lutte contre le stress tout comme le romarin qui soulage aussi les maux de tête.
+                   </p>
+               </div>
+               <div data-aos="fade-up-right" class="image three col-md-6">
+                   <img src="https://www.magazine-omnicuiseur.fr/wp-content/uploads/2018/05/alimentation-bien-etre-450x300.jpg" style="width: 450px;
+                   height: 250px;">
+                  <p>
+                    Les fruits sont importants pour notre santé. Ils devraient occuper une place primordiale dans notre alimentation car source de vitamines, minéraux, fibres, antioxydants et énergie dont le rôle de protection générale de l'organisme est chaque jour confirmé.
+                    Tous les scientifiques sont aujourd'hui d'accord pour dire que les personnes consommant suffisamment de fruits sont moins souvent atteintes de maladies cardio-vasculaires, d'obésité, de cancers et de diabète. Par exemple les personnes qui consomment peu de fruits et de légumes ont 1,5 à 2 fois plus de risques de développer certains types de cancers que celles qui en mangent beaucoup.
+                  </p>  </div>
+               <div data-aos="fade-up-left" class="image four col-md-6">
+                   <img src="https://www.menshealth.de/media/mh-514422/1920x/shbaibaz521309548quarkjoghurtmuesli800x462jpg.jpg?source=default" style="width: 450px;
+                   height: 250px;">
+                    <p>
+                        Les fruits secs et les fruits séchés sont concentrés en fibres, minéraux, acides gras essentiels et vitamines et sont bons pour la santé et pour le corps. Ils contiennent :
+                        Des fibres, indispensables au fonctionnement du transit et de la satiété ;
+                        Des glucides, source d’énergie ;
+                        Des vitamines (A, B, C..), des minéraux et oligo-éléments (magnésium, potassium, calcium, sélénium, fer, cuivre, zinc, manganèse...) ;
+                        Des phyto-substances qui diminuent les risques de cancer, d’hypertension, de diabète et de maladies cardio-vasculaires ;
+                        Des acides gras essentiels (oméga-3 et oméga-6) qui permettent de se protéger du mauvais cholestérol et des maladies cardiaques...
+                        Une très longue étude, menée par des chercheurs britanniques sur plus de 80 ans, est sortie en 2013, montrant que les consommateurs réguliers de fruits à coque vivent plus longtemps ! Attention cependant aux allergies, surtout pour les plus petits.
+                       </p>
+               </div>
+           </div>
+       </div>
+       <div class="main-card row">
+           <div>
+
+           </div>
+       </div>
+   </main>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>
